@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from './page.module.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -9,8 +10,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          This is a test where I try editing some text in&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
+          Read <Link href="/posts/first-post">this page!</Link>
         </p>
         <div>
           <a
