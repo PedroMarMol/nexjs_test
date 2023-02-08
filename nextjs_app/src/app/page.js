@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({ allPostsData }) {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -19,14 +19,6 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
           </a>
         </div>
       </div>
